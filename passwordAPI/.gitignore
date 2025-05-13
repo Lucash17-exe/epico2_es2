@@ -1,0 +1,14 @@
+# Node.js
+node_modules/
+.env
+*.log
+npm-debug.log*
+
+# Dados simulados
+data/*.json
+
+# IDEs e sistemas operativos
+.DS_Store
+.vscode/
+*.swp
+Thumbs.db

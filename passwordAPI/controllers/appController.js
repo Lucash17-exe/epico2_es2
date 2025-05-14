@@ -3,11 +3,18 @@ const fs = require('fs');
 const path = require('path');
 
 const appsFile = path.join(__dirname, '../data/apps.json');
+const relationsFile = path.join(__dirname, '../data/relations.json');
+
 let apps = require(appsFile);
+let relations = require(relationsFile);
 
 // Helper: escreve no ficheiro
 function saveAppsToFile() {
     fs.writeFileSync(appsFile, JSON.stringify(apps, null, 2));
+}
+
+function saveRelstionsToFIle() {
+    fs.writeFileSync(relationsFile, JSON.stringify(relations, null, 2));
 }
 
 // POST /app
@@ -27,6 +34,13 @@ exports.createApp = (req, res) => {
 
     apps.push(newApp);
     saveAppsToFile();
+
+    relations.push({
+        subject:  `user:${req.user.id}`,
+        relation: 'owner',
+        object:   `app:${newApp.id}`
+    });
+    saveRelstionsToFIle();
 
     res.status(201).json({ message: 'App created.', app: newApp });
 };

@@ -8,20 +8,5 @@
     "subject": "user:1",
     "relation": "owner",
     "object": "app:541ba859-524b-4379-b578-a9add7f1669b"
-  },
-  {
-    "subject": "user:1",
-    "relation": "owner",
-    "object": "app:e1f7a2ef-f78c-4af4-b306-22ce901b7e0b"
-  },
-  {
-    "subject": "user:1",
-    "relation": "owner",
-    "object": "app:49ebae06-43fd-4a66-8316-02d153c35a68"
-  },
-  {
-    "subject": "user:1",
-    "relation": "owner",
-    "object": "app:2ae6aa0a-43e9-409b-a43e-70f1ad2cdb19"
   }
 ]

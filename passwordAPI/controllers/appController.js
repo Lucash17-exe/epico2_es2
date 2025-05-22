@@ -7,6 +7,7 @@ const relationsFile = path.join(__dirname, '../data/relations.json');
 
 let apps = require(appsFile);
 let relations = require(relationsFile);
+var errorMessage = '';
 
 // Helper: escreve no ficheiro
 function saveAppsToFile() {
@@ -17,12 +18,42 @@ function saveRelstionsToFIle() {
     fs.writeFileSync(relationsFile, JSON.stringify(relations, null, 2));
 }
 
+function verifyError(name, description) {
+    if(!name && !description) {
+        errorMessage = 'App name and description are required.';
+        return false;
+    }
+    if (!name) {
+        errorMessage = 'App name is required.';
+        return false;
+    }
+    if (!description) {
+        errorMessage = 'App description is required.';
+        return false;
+    }
+    return true;
+}
+
+function verifyExistsAppName(name) {
+    const appExists = apps.find(app => app.name === name);
+
+    if (appExists) {
+        errorMessage = 'App name already exists.';
+        return false;
+    }
+    return true;
+}
+
 // POST /app
 exports.createApp = (req, res) => {
     const { name, description } = req.body;
 
-    if (!name) {
-        return res.status(400).json({ error: 'App name is required.' });
+    if (!verifyError(name, description)) {
+        return res.status(400).json({ error: errorMessage });
+    }
+
+    if (!verifyExistsAppName(name)) {
+        return res.status(400).json({ error: errorMessage });
     }
 
     const newApp = {

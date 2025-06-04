@@ -1,11 +1,5 @@
 [
   {
-<<<<<<< HEAD
-    "id": "87f5ab24-f324-4fa7-845f-4249b8a7ced8",
-    "name": "RepeatedApp",
-    "description": "Primeira app",
-    "createdAt": "2025-06-04T00:05:17.447Z"
-=======
     "id": "28a54255-7985-4c8e-934d-4322ce471330",
     "name": "Teste",
     "description": "Novo App",
@@ -28,6 +22,5 @@
     "name": "Teste Rebac",
     "description": "Novo App",
     "createdAt": "2025-05-14T10:32:27.143Z"
->>>>>>> origin/main
   }
 ]

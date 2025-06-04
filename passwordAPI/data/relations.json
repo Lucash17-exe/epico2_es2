@@ -2,6 +2,15 @@
   {
     "subject": "user:user1",
     "relation": "owner",
+<<<<<<< HEAD
     "object": "app:87f5ab24-f324-4fa7-845f-4249b8a7ced8"
+=======
+    "object": "app:d9e9da47-2755-4386-aef2-84243c2307e7"
+  },
+  {
+    "subject": "user:1",
+    "relation": "owner",
+    "object": "app:541ba859-524b-4379-b578-a9add7f1669b"
+>>>>>>> origin/main
   }
 ]

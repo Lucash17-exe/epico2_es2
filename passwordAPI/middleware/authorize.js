@@ -2,6 +2,7 @@ const fs   = require('fs');
 const path = require('path');
 
 const relationsFile = path.join(__dirname, '../data/relations.json');
+const appsFile = path.join(__dirname, '../data/apps.json');
 
 function authorize(resourceType, paramName, relation = 'owner') {
 
@@ -11,6 +12,13 @@ function authorize(resourceType, paramName, relation = 'owner') {
     const object=`${resourceType}:${req.params[paramName]}`;
 
     const relations=JSON.parse(fs.readFileSync(relationsFile, 'utf8'));
+
+    const apps=JSON.parse(fs.readFileSync(appsFile, 'utf8'));
+
+    if (!apps.some(r => r.id == req.params[paramName]))
+      return res
+        .status(404)
+        .json({ error: 'App não encontrado.' });
 
     const allowed = relations.some(r =>
       r.subject === subject &&

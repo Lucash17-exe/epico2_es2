@@ -1,8 +1,33 @@
 [
   {
+<<<<<<< HEAD
     "id": "87f5ab24-f324-4fa7-845f-4249b8a7ced8",
     "name": "RepeatedApp",
     "description": "Primeira app",
     "createdAt": "2025-06-04T00:05:17.447Z"
+=======
+    "id": "28a54255-7985-4c8e-934d-4322ce471330",
+    "name": "Teste",
+    "description": "Novo App",
+    "createdAt": "2025-05-14T09:32:53.663Z"
+  },
+  {
+    "id": "d5752edf-7e81-4153-8450-b599e0ed39cb",
+    "name": "Teste2",
+    "description": "Novo App",
+    "createdAt": "2025-05-14T09:33:30.496Z"
+  },
+  {
+    "id": "d9e9da47-2755-4386-aef2-84243c2307e7",
+    "name": "Teste2",
+    "description": "Novo App",
+    "createdAt": "2025-05-14T10:25:26.267Z"
+  },
+  {
+    "id": "541ba859-524b-4379-b578-a9add7f1669b",
+    "name": "Teste Rebac",
+    "description": "Novo App",
+    "createdAt": "2025-05-14T10:32:27.143Z"
+>>>>>>> origin/main
   }
 ]

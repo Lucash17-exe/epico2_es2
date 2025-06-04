@@ -7,7 +7,6 @@ const logger = winston.createLogger({
     ],
 });
 
-module.exports = (req, res, next) => {
-    logger.info(`${req.method} ${req.url}`);
-    next();
+exports.logInfo = (msg) => {
+  console.log(msg);
 };

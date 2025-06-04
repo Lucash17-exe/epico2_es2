@@ -1,44 +1,8 @@
 [
   {
-    "id": "28a54255-7985-4c8e-934d-4322ce471330",
-    "name": "Teste",
-    "description": "Novo App",
-    "createdAt": "2025-05-14T09:32:53.663Z"
-  },
-  {
-    "id": "d5752edf-7e81-4153-8450-b599e0ed39cb",
-    "name": "Teste2",
-    "description": "Novo App",
-    "createdAt": "2025-05-14T09:33:30.496Z"
-  },
-  {
-    "id": "d9e9da47-2755-4386-aef2-84243c2307e7",
-    "name": "Teste2",
-    "description": "Novo App",
-    "createdAt": "2025-05-14T10:25:26.267Z"
-  },
-  {
-    "id": "541ba859-524b-4379-b578-a9add7f1669b",
-    "name": "Teste Rebac",
-    "description": "Novo App",
-    "createdAt": "2025-05-14T10:32:27.143Z"
-  },
-  {
-    "id": "101f1ef1-99c2-4487-8db3-3152b7a35c7a",
-    "name": "TesteAppLucas",
-    "description": "Teste Criacao App",
-    "createdAt": "2025-05-21T16:08:09.569Z"
-  },
-  {
-    "id": "3d05125b-4427-48b1-8cf6-3304919bc274",
-    "name": "TesteApp",
-    "description": "Teste Criacao App",
-    "createdAt": "2025-05-21T18:28:21.184Z"
-  },
-  {
-    "id": "2ed96819-1dbf-44b0-9fab-b9861d49c3d6",
-    "name": "TesteApp",
-    "description": "Teste Criacao App",
-    "createdAt": "2025-05-21T18:28:45.048Z"
+    "id": "87f5ab24-f324-4fa7-845f-4249b8a7ced8",
+    "name": "RepeatedApp",
+    "description": "Primeira app",
+    "createdAt": "2025-06-04T00:05:17.447Z"
   }
 ]
